@@ -1,0 +1,159 @@
+@import "../node_modules/compass-mixins/lib/compass/reset";
+@import "../node_modules/compass-mixins/lib/compass/css3";
+
+$color-gray: #434343;
+$color-green: #00b38a;
+$color-shadow-gray: #595959;
+$font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+$font-color: rgba(0,0,0,.85);
+$font-size-small: 17px;
+$font-size-middle: 24px;
+
+* {
+  @include box-sizing(border-box);
+  user-select: none;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  background-color: #eee;
+  overflow: auto;
+  padding-top: 5px;
+  @media screen and (max-width: 1024px) {
+    padding-top: 0;
+  }
+}
+.wrapper {
+    position: relative;
+    width: 1024px;
+    margin: 50px auto;
+    @include border-radius(5px);
+    background-color: #fff;
+    overflow: hidden;
+    color: $font-color;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin: 0;
+        @include border-radius(0);
+    }
+}
+.hairline {
+    width: 100%;
+    height: 20px;
+    background: $color-gray;
+}
+.content-wrapper {
+    padding: 20px;
+}
+.name {
+    font-size: 40px;
+    font-weight: bold;
+}
+.basic-info {
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-gray;
+    font-size: $font-size-small;
+    padding-bottom:  6px;
+}
+.basic-item {
+    flex: 1;
+    display: flex;
+}
+.basic-value {
+    margin-left: 10px;
+}
+.title-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.title {
+    padding: 4px 10px;
+    font-size: $font-size-middle;
+    background: $color-gray;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.hairline-small {
+    height: 2px;
+    background: $color-gray;
+    flex: 1;
+
+}
+.skill-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skill-item {
+    margin-top: 18px;
+    font-size: $font-size-small;
+    display: flex;
+}
+.skill-label {
+    color: $color-gray;
+}
+.skill-value {
+    margin-left: 10px;
+    color: $color-shadow-gray;
+}
+.company-wrapper {
+    display: flex;
+    font-size: $font-size-middle;
+    width: 100%;
+    height: 40px;
+    background: #d9d9d9;
+    color: $font-color;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.company-block {
+    height: 100%;
+    width: 6px;
+    background: #bfbfbf;
+    margin-right: 10px;
+}
+.company-date {
+    margin-left: 10px;
+}
+.company-content {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    font-size: $font-size-small;
+    color: $color-gray;
+    line-height: 36px;
+}
+.project-wrapper {
+    display: flex;
+    font-size: $font-size-middle;
+    width: 20%;
+    height: 40px;
+    background: #d9d9d9;
+    color: $font-color;
+    line-height: 40px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.primary-content {
+    font-weight: bold;
+}
+.left-20 {
+    margin-left: 20px;
+}
+a {
+    color: $color-gray;
+    font-size: $font-size-small;
+    font-weight: bold;
+}

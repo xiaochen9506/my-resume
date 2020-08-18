@@ -1,0 +1,37 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "chrome-finder": "^1.0.7",
+    "compass-mixins": "^0.12.10",
+    "css-loader": "^3.5.3",
+    "end-webpack-plugin": "^4.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "web-webpack-plugin": "^4.6.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanv11/my-resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanv11/my-resume/issues"
+  },
+  "homepage": "https://github.com/chanv11/my-resume#readme"
+}
