@@ -45,10 +45,6 @@
 						Microfrontend
 					</div>
 				</div>
-				<div class="skill-item">
-					<div class="skill-label">其他会用:</div>
-					<div class="skill-value">Node</div>
-				</div>
 			</div>
 			<div class="title-wrapper">
 				<div class="title">工作经历</div>
@@ -62,13 +58,13 @@
 				</div>
 				<div class="company-content">
 					<span>
-						入职之后负责安防平台H5项目维护，包括对接支付宝，微信，PayPal，stripe等支付方式。
+						入职之后负责安防平台H5项目维护，封装支付组件。
 					</span>
-					<span>参与运营平台的开发维护，组件库开发。 </span>
+					<span>参与运营平台的开发维护，开发流程优化，npm包发布规范。 </span>
 					<span>封装对外开放组件sdk，采用 ReactToWebComponent
 						的实现方式，磨平外部开发者使用框架的局限。</span>
 					<span>
-						根据公司需求，调研微前端能力，赋能公司内的业务团队，产出主子应用模板，迁移工具集，培训各个团队接入
+						根据公司需求，调研微前端能力，赋能公司内的业务团队，产出主子应用模板，迁移工具集，培训各个团队接入。
 					</span>
 				</div>
 				<div class="company-content">
@@ -80,10 +76,10 @@
 						</span>
 						<span>
 							<span class="primary-content">技术栈：</span>
-							React,TypeScript,WebComponent,DireFlow
+							React, TypeScript, WebComponent, DireFlow
 						</span>
 						<span>使用 ReactToWebComponents 的方式开发，对于开发人员来说技术栈不变，提升开发效率</span>
-						<span>配置 external,减少打包体积，分离出 React，React Dom，antd，moment,减少打包体积，gzip加速后，一般大小只有几十kb</span>
+						<span>优化打包体积，gzip加速后，一般大小只有几十kb</span>
 					</div>
 					<div class="project-wrapper">- 微前端</div>
 					<div class="company-content">
@@ -93,14 +89,14 @@
 						</span>
 						<span>
 							<span class="primary-content">技术栈：</span>
-							React,TypeScript,QianKun,Mudusa,rxjs
+							React, TypeScript, QianKun, Mudusa, rxjs
 						</span>
-						<span>提供主子应用模板，rxjs封装通讯功能</span>
-						<span>通过redux 中间件来给子应用初始化基础数据</span>
-						<span>解决部分 antd 组件问题，比如类似 message Modal 等组件，默认给 body 下插入 dom，子应用切换时不会卸载这些组件</span>
-						<span>通过subtree增强主子应用模板的能力</span>
-						<span>抽离权限-菜单逻辑，通过中间层处理</span>
-						<span>带领组内同学，开发cli工具方便迁移微应用，提供功能：网关迁移，多语言迁移，快速创建微应用等</span>
+						<span>提供主子应用模板，rxjs 封装通讯功能</span>
+						<span>数据流方案产出</span>
+						<span>解决部分 antd 组件兼容性问题</span>
+						<span>根据业务线需要增强模板能力的方案</span>
+						<span>抽离权限-菜单逻辑</span>
+						<span>带领组内同学，开发微前端工具集，方便迁移，提效</span>
 						<span>多次公司内分享微前端原理及实际使用</span>
 					</div>
 					<div class="project-wrapper">- 安防平台H5</div>
@@ -111,10 +107,10 @@
 						</span>
 						<span>
 							<span class="primary-content">技术栈：</span>
-							React,Next,TypeScript
+							React, Next, TypeScript
 						</span>
 						<span>H5 总体使用 React + Next SSR来达到更快的渲染速度，C端用户可通过App跳转H5，进行IPC服务的购买。 </span>
-						<span>封装支付组件,收敛支付逻辑，包括发起支付，以及支付结束的的callback，可根据业务方需要，使用不同的支付方式。</span>
+						<span>封装支付组件,收敛支付逻辑，包括发起支付，以及支付结束的的 callback，可根据业务方需要，使用不同的支付方式。</span>
 						<span>
 							<span class="primary-content">遇到的问题：</span>
 							由于app内的h5支付需要打开第三方支付页面，所以会破坏历史堆栈，支付完成之后跳到的支付结果页直接返回会返回到第三方支付页，会再次调起支付，并且支付失败，体验极差，所以需要在支付结果页手动控制历史堆栈。
@@ -128,19 +124,19 @@
 						</span>
 						<span>
 							<span class="primary-content">技术栈：</span>
-							React,TypeScript
+							React, TypeScript
 						</span>
 						<span>
-							业务迭代一段时间后，积累了很多的组件，这个时期选择搭建基于gulp的组件库，支持按需引入，项目配置 babel-import-plugin，可支持其他应用的开发。
+							搭建业务组件库，支持按需引入，可支持其他应用的开发。
 						</span>
 						<span>
-							规范发布流程，运用np配置规范的版本号，规范发布分支，确保使用最新的依赖，自动build，增加git tag。
+							规范发布流程，指定发布分支，确保使用最新的依赖，增加 tag。
 						</span>
 						<span>
-							规范文件结构，集成plopfile，定制组件模板,以一致的方式生成代码。统一组件开发结构。
+							规范文件结构，定制组件模板,以一致的方式生成代码。统一仓库文件结构。
 						</span>
 						<span>
-							开发ts-running 工具，旨在联调阶段，前端开发人员根据接口文档定义的interface，与实际response.body 对比，得出数据结构对比结果，提高联调效率。
+							开发 ts-running 工具，配合接口文档，提高联调效率。
 						</span>
 					</div>
 				</div>
